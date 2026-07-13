@@ -60,7 +60,7 @@ export default function Home() {
       <div className="topbar">Independent advisory · Nationwide specialist network <a href="tel:+15035455217">(503) 545-5217</a></div>
       <header className="nav shell">
         <a className="brand" href="#top" aria-label="Richard E. Cassinelli and Value Added Assets LLC home">
-          <span className="brandMark"><img src="/cassinelli-mark.png" alt="" /></span>
+          <span className="brandMark"><img src="cassinelli-mark.png" alt="" /></span>
           <span><strong>RICHARD E. CASSINELLI</strong><small>VALUE ADDED ASSETS LLC</small></span>
         </a>
         <nav aria-label="Primary navigation">
@@ -125,7 +125,7 @@ export default function Home() {
         <form onSubmit={submitIntake}><div className="formRow"><label>Your name<input required name="name" /></label><label>Company<input name="company" /></label></div><div className="formRow"><label>Email<input required name="email" type="email" /></label><label>Phone<input name="phone" type="tel" /></label></div><div className="formRow"><label>Opportunity<select name="opportunity"><option>Cost segregation</option><option>Tariff refund review</option><option>Both / not sure</option><option>CPA or advisor referral</option></select></label><label>Property value / duties paid<input name="value" placeholder="Approximate is fine" /></label></div><label>What should Rich know?<textarea name="notes" rows={4} placeholder="Property type and date placed in service, or import period and approximate duties paid…" /></label><button className="button" type="submit">Send consultation request <span>→</span></button><small>Submitting opens your email application with the completed request. No information is stored by this website.</small></form>
       </div></section>
 
-      <footer><div className="shell footerGrid"><div className="brand footerBrand"><span className="brandMark"><img src="/cassinelli-mark.png" alt="" /></span><span><strong>RICHARD E. CASSINELLI</strong><small>VALUE ADDED ASSETS LLC</small></span></div><p>Part of Value Added Assets LLC—connecting owners and importers with experienced cost segregation and tariff recovery professionals.</p><div><a href="mailto:valueaddedassets@gmail.com">valueaddedassets@gmail.com</a><a href="tel:+15035455217">(503) 545-5217</a></div></div><div className="shell legal">© 2026 Value Added Assets LLC. All rights reserved.<span>Information is educational only and is not tax, legal, engineering, customs, or investment advice. Results are not guaranteed.</span></div></footer>
+      <footer><div className="shell footerGrid"><div className="brand footerBrand"><span className="brandMark"><img src="cassinelli-mark.png" alt="" /></span><span><strong>RICHARD E. CASSINELLI</strong><small>VALUE ADDED ASSETS LLC</small></span></div><p>Part of Value Added Assets LLC—connecting owners and importers with experienced cost segregation and tariff recovery professionals.</p><div><a href="mailto:valueaddedassets@gmail.com">valueaddedassets@gmail.com</a><a href="tel:+15035455217">(503) 545-5217</a></div></div><div className="shell legal">© 2026 Value Added Assets LLC. All rights reserved.<span>Information is educational only and is not tax, legal, engineering, customs, or investment advice. Results are not guaranteed.</span></div></footer>
     </main>
   );
 }

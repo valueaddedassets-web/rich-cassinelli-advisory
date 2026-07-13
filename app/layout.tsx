@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
-
-const geist = Geist({ variable: "--font-sans", subsets: ["latin"] });
-const cormorant = Cormorant_Garamond({ variable: "--font-serif", subsets: ["latin"], weight: ["500", "600"] });
 
 export const metadata: Metadata = {
   title: "Richard E. Cassinelli | Value Added Assets LLC",
@@ -13,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body className={`${geist.variable} ${cormorant.variable}`}>{children}</body></html>;
+  return <html lang="en"><body>{children}</body></html>;
 }
