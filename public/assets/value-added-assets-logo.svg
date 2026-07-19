@@ -1,16 +1,45 @@
-<svg width="760" height="180" viewBox="0 0 760 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="756" height="300" viewBox="0 0 756 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Value Added Assets logo</title>
-  <desc id="desc">Corporate logo for Value Added Assets.</desc>
-  <rect x="18" y="20" width="140" height="140" fill="#061B2A"/>
-  <path d="M32 34H144V146H32V34Z" stroke="#C49A45" stroke-width="5"/>
-  <path d="M44 54H132" stroke="#C49A45" stroke-width="2" opacity=".55"/>
-  <text x="88" y="98" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="45" font-weight="700" letter-spacing="2" fill="#FFFFFF">VAA</text>
-  <path d="M54 118H122" stroke="#C49A45" stroke-width="5" stroke-linecap="square"/>
-  <path d="M66 130H110" stroke="#C49A45" stroke-width="2" stroke-linecap="square" opacity=".7"/>
-  <text x="88" y="142" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.5" font-weight="800" letter-spacing="2.5" fill="#C49A45">ASSETS</text>
-  <path d="M194 43H704" stroke="#C49A45" stroke-width="3"/>
-  <text x="192" y="91" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" letter-spacing="2.5" fill="#061B2A">VALUE ADDED ASSETS</text>
-  <text x="194" y="126" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="4.5" fill="#445B63">COMMERCIAL VALUATION</text>
-  <text x="444" y="126" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="4.5" fill="#445B63">COST SEGREGATION</text>
-  <path d="M194 145H704" stroke="#061B2A" stroke-width="2" opacity=".18"/>
+  <desc id="desc">Corporate VAA logo for Value Added Assets with tagline Maximizing Value / Reducing Taxes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="756" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#061B2A"/>
+      <stop offset=".58" stop-color="#082235"/>
+      <stop offset="1" stop-color="#03111D"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="72" y1="58" x2="250" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6D17B"/>
+      <stop offset=".2" stop-color="#C79231"/>
+      <stop offset=".52" stop-color="#8B5F1F"/>
+      <stop offset=".78" stop-color="#E1AF55"/>
+      <stop offset="1" stop-color="#FFF0B5"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="74" y1="244" x2="682" y2="244" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4D3415" stop-opacity="0"/>
+      <stop offset=".18" stop-color="#C7933A"/>
+      <stop offset=".5" stop-color="#F0BE61"/>
+      <stop offset=".82" stop-color="#C7933A"/>
+      <stop offset="1" stop-color="#4D3415" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="45" y="34" width="245" height="166" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity=".4"/>
+    </filter>
+  </defs>
+  <rect width="756" height="300" fill="url(#bg)"/>
+  <path d="M0 0H756V300H0V0Z" fill="#031522" opacity=".24"/>
+  <g filter="url(#shadow)">
+    <path d="M86 55H132L194 152L257 55H300L205 198H182L86 55Z" fill="url(#gold)"/>
+    <path d="M101 55H130L190 149L181 166L101 55Z" fill="#F7D37C" opacity=".55"/>
+    <path d="M257 55H300L205 198H182L201 169L257 55Z" fill="#E7B75D" opacity=".82"/>
+  </g>
+  <path d="M260 196L358 54H389L489 196H444L374 93L304 196H260Z" fill="#F8FAFC"/>
+  <path d="M374 94L336 150H412L374 94Z" fill="#061B2A"/>
+  <path d="M362 122H386V184H410L374 221L338 184H362V122Z" fill="url(#gold)"/>
+  <path d="M468 196L566 54H598L699 196H653L584 94L514 196H468Z" fill="#F8FAFC"/>
+  <path d="M584 94L548 148H620L584 94Z" fill="#061B2A"/>
+  <path d="M540 154H675V180H522L540 154Z" fill="#F8FAFC"/>
+  <text x="378" y="238" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700" letter-spacing="12" fill="#F7F8F5">VALUE ADDED ASSETS</text>
+  <path d="M74 258H238" stroke="url(#goldLine)" stroke-width="3"/>
+  <text x="378" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" letter-spacing="2.4" fill="#C7933A">MAXIMIZING VALUE / REDUCING TAXES</text>
+  <path d="M518 258H682" stroke="url(#goldLine)" stroke-width="3"/>
 </svg>
