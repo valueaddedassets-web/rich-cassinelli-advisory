@@ -7,8 +7,6 @@ const nextConfig: NextConfig = {
   ...(isGitHubPages
     ? {
         output: "export" as const,
-        basePath: "/rich-cassinelli-advisory",
-        assetPrefix: "/rich-cassinelli-advisory",
         trailingSlash: true,
       }
     : {}),
