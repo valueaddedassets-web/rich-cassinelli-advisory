@@ -8,6 +8,7 @@ export const contact = {
 };
 
 export const navItems = [
+  { label: "Home", href: "/" },
   { label: "Appraisals", href: "/appraisals/" },
   { label: "Cost Segregation", href: "/cost-segregation/" },
   { label: "About Rich", href: "/about/" },
