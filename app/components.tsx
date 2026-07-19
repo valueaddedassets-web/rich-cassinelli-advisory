@@ -63,6 +63,73 @@ export function PageShell({ children }: { children: React.ReactNode }) {
   );
 }
 
+export function LeadForm({ compact = false }: { compact?: boolean }) {
+  return (
+    <form action={contact.formUrl} method="POST">
+      <input type="hidden" name="_subject" value="New Value Added Assets quote request" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_next" value={contact.formReturnUrl} />
+      <input
+        type="hidden"
+        name="_autoresponse"
+        value="Thank you for contacting Value Added Assets. Rich has received your request and will review the details."
+      />
+      <input className="honeyField" type="text" name="_honey" tabIndex={-1} autoComplete="off" />
+      <label>
+        Service interest
+        <select name="Service interest" defaultValue="" required>
+          <option value="" disabled>Select one</option>
+          <option>Commercial appraisal</option>
+          <option>Appraisal review</option>
+          <option>Litigation support</option>
+          <option>Property tax analysis</option>
+          <option>Cost segregation</option>
+          <option>Not sure yet</option>
+        </select>
+      </label>
+      <div className="formRow">
+        <label>
+          Name
+          <input name="Name" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" placeholder="you@company.com" required />
+        </label>
+      </div>
+      <div className="formRow">
+        <label>
+          Phone
+          <input name="Phone" type="tel" placeholder="Best callback number" />
+        </label>
+        <label>
+          Timing
+          <input name="Timing" placeholder="Target due date or urgency" />
+        </label>
+      </div>
+      <label>
+        Property or company
+        <input name="Property or company" placeholder="Property address, market, or company name" />
+      </label>
+      {!compact && (
+        <label>
+          Request details
+          <textarea
+            name="Request details"
+            rows={5}
+            placeholder="Purpose of assignment, property type, lender or attorney requirements, cost basis, or other helpful details"
+          />
+        </label>
+      )}
+      <button type="submit">Send Request to Rich</button>
+      <p>
+        Submissions are emailed to Value Added Assets. You can also contact Rich directly at{" "}
+        <a href={contact.emailHref}>{contact.email}</a>.
+      </p>
+    </form>
+  );
+}
+
 export function QuotePanel({ title = "Request a quote or confidential review" }: { title?: string }) {
   return (
     <section className="quoteBand" id="quote">
@@ -80,32 +147,7 @@ export function QuotePanel({ title = "Request a quote or confidential review" }:
           </div>
         </div>
         <div className="miniForm">
-          <form action={contact.formUrl} target="_blank">
-            <label>
-              Service interest
-              <select name="service" defaultValue="">
-                <option value="" disabled>Select one</option>
-                <option>Commercial appraisal</option>
-                <option>Appraisal review</option>
-                <option>Litigation support</option>
-                <option>Cost segregation</option>
-                <option>Not sure yet</option>
-              </select>
-            </label>
-            <label>
-              Property or company
-              <input name="property" placeholder="Property address, market, or company name" />
-            </label>
-            <label>
-              Timing
-              <input name="timing" placeholder="Target due date or urgency" />
-            </label>
-            <button type="submit">Open Secure Intake Form</button>
-            <p>
-              The intake opens in Google Forms so the request can be captured cleanly. You can also email
-              Rich directly.
-            </p>
-          </form>
+          <LeadForm compact />
         </div>
       </div>
     </section>

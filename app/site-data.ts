@@ -3,8 +3,8 @@ export const contact = {
   phoneHref: "tel:+15035455217",
   email: "valueaddedassets@gmail.com",
   emailHref: "mailto:valueaddedassets@gmail.com",
-  formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdpXP99wX9U962yoSAm3K9SAXmzaeYDte9VUkXb5zmjwZF5CA/viewform",
-  formEmbed: "https://docs.google.com/forms/d/e/1FAIpQLSdpXP99wX9U962yoSAm3K9SAXmzaeYDte9VUkXb5zmjwZF5CA/viewform?embedded=true",
+  formUrl: "https://formsubmit.co/valueaddedassets@gmail.com",
+  formReturnUrl: "https://valueaddedassets.com/thank-you/",
 };
 
 export const navItems = [

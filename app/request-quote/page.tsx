@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PageShell } from "../components";
+import { LeadForm, PageShell } from "../components";
 import { JsonLd, breadcrumbSchema } from "../seo";
 import { contact } from "../site-data";
 
@@ -66,12 +66,7 @@ export default function RequestQuotePage() {
               </div>
             </div>
             <div className="formFrame">
-              <iframe src={contact.formEmbed} title="Value Added Assets request intake" loading="lazy">
-                Loading…
-              </iframe>
-              <p>
-                If the form does not load, <a href={contact.formUrl} target="_blank" rel="noreferrer">open the intake form here</a>.
-              </p>
+              <LeadForm />
             </div>
           </div>
         </section>
