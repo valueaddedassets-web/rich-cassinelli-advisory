@@ -80,8 +80,12 @@ export default function Home() {
             </p>
             <AppraisalServiceList />
           </div>
-          <div className="mapPanel">
-            <img src="/assets/market-map.svg" alt="Map showing Oregon, Washington, Idaho, California, Utah and Texas licensing footprint" />
+          <div className="market-map accurate-map" aria-label="Accurate western service and license map">
+            <img className="service-map" src="/assets/service-map.svg" alt="Accurate U.S. state map highlighting Washington, Oregon, California, Idaho, Utah, and Texas." />
+            <div className="map-legend">
+              <strong>Highlighted licensing footprint</strong>
+              <span>Oregon, Washington, California, Idaho, Utah, and Texas</span>
+            </div>
           </div>
         </section>
 
