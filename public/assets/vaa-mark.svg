@@ -1,0 +1,21 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Value Added Assets mark</title>
+  <desc id="desc">Geometric monogram mark for Value Added Assets.</desc>
+  <defs>
+    <linearGradient id="g1" x1="29" y1="21" x2="152" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4D58B"/>
+      <stop offset=".45" stop-color="#BD8F3F"/>
+      <stop offset="1" stop-color="#6F542A"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="41" y1="139" x2="133" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#061B2A"/>
+      <stop offset="1" stop-color="#24808B"/>
+    </linearGradient>
+  </defs>
+  <path d="M90 10L160 50V130L90 170L20 130V50L90 10Z" fill="#061B2A"/>
+  <path d="M90 20L151 55V125L90 160L29 125V55L90 20Z" stroke="url(#g1)" stroke-width="8"/>
+  <path d="M54 116L86 57L119 116H105L86 81L68 116H54Z" fill="url(#g1)"/>
+  <path d="M74 124H108L119 145H62L74 124Z" fill="url(#g2)"/>
+  <path d="M121 59H136L103 123L96 106L121 59Z" fill="#E8C06E"/>
+  <path d="M43 49L90 23L137 49" stroke="rgba(255,255,255,.18)" stroke-width="1"/>
+</svg>

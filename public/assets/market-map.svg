@@ -1,0 +1,32 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Western and multi-state service map</title>
+  <desc id="desc">Stylized professional map highlighting Oregon, Washington, Idaho, California, Utah and Texas.</desc>
+  <rect width="900" height="620" fill="#F3F6F4"/>
+  <path d="M117 95L204 74L270 97L269 170L242 199L150 182L114 145L117 95Z" fill="#D8E4DF" stroke="#7E9290" stroke-width="3"/>
+  <path d="M151 188L244 205L268 177L306 208L294 293L270 330L177 306L130 252L151 188Z" fill="#B9CFC8" stroke="#617B79" stroke-width="3"/>
+  <path d="M131 261L176 315L268 338L250 421L299 538L204 518L146 402L102 365L121 306L131 261Z" fill="#DCE3DF" stroke="#8EA09D" stroke-width="3"/>
+  <path d="M278 99L402 119L391 224L312 211L276 176L278 99Z" fill="#C2D7D0" stroke="#617B79" stroke-width="3"/>
+  <path d="M310 222L389 234L374 367L286 349L303 293L310 222Z" fill="#E3E7E2" stroke="#8EA09D" stroke-width="3"/>
+  <path d="M385 371L497 392L472 513L334 488L288 358L385 371Z" fill="#DCE3DF" stroke="#8EA09D" stroke-width="3"/>
+  <path d="M556 400L723 428L803 490L790 558L641 585L522 516L556 400Z" fill="#C8DCD5" stroke="#617B79" stroke-width="3"/>
+  <g fill="#0B2633" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="700">
+    <text x="161" y="141">WA</text>
+    <text x="185" y="260">OR</text>
+    <text x="324" y="171">ID</text>
+    <text x="171" y="410">CA</text>
+    <text x="359" y="450">UT</text>
+    <text x="638" y="513">TX</text>
+  </g>
+  <g stroke="#B98F45" stroke-width="4">
+    <circle cx="194" cy="134" r="8" fill="#B98F45"/>
+    <circle cx="203" cy="253" r="8" fill="#B98F45"/>
+    <circle cx="347" cy="163" r="8" fill="#B98F45"/>
+    <circle cx="190" cy="404" r="8" fill="#B98F45"/>
+    <circle cx="377" cy="443" r="8" fill="#B98F45"/>
+    <circle cx="654" cy="507" r="8" fill="#B98F45"/>
+  </g>
+  <path d="M194 134C280 186 350 267 377 443C464 420 552 442 654 507" stroke="#B98F45" stroke-width="2" stroke-dasharray="8 9"/>
+  <g fill="#637675" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2">
+    <text x="55" y="55">CERTIFIED GENERAL APPRAISER LICENSE FOOTPRINT</text>
+  </g>
+</svg>
