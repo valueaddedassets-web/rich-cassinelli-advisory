@@ -87,7 +87,7 @@ button, input, select, textarea { font: inherit; }
     var(--navy);
   color: var(--white);
 }
-.homeHero { min-height: 720px; display: grid; align-items: center; }
+.homeHero { min-height: 520px; display: grid; align-items: center; }
 .heroTexture {
   position: absolute;
   inset: 0;
@@ -103,9 +103,9 @@ button, input, select, textarea { font: inherit; }
   z-index: 1;
   display: grid;
   grid-template-columns: 1.15fr 0.72fr;
-  gap: clamp(50px, 8vw, 110px);
+  gap: clamp(32px, 5vw, 72px);
   align-items: center;
-  padding: 80px 0;
+  padding: 50px 0;
 }
 .eyebrow {
   margin: 0 0 18px;
@@ -122,15 +122,15 @@ h1, h2 {
   font-weight: 650;
   letter-spacing: -0.025em;
 }
-h1 { margin-bottom: 24px; font-size: clamp(42px, 5.2vw, 72px); max-width: 860px; }
-h2 { margin-bottom: 20px; font-size: clamp(30px, 3.7vw, 48px); }
+h1 { margin-bottom: 18px; font-size: clamp(28px, 3.2vw, 38px); max-width: 720px; }
+h2 { margin-bottom: 16px; font-size: clamp(24px, 2.4vw, 32px); }
 h3 { margin-bottom: 12px; color: var(--navy); font-size: 22px; }
 .lead {
   max-width: 720px;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
   color: rgba(255, 255, 255, 0.82);
-  font-size: clamp(18px, 2vw, 23px);
-  line-height: 1.62;
+  font-size: clamp(16px, 1.45vw, 18px);
+  line-height: 1.58;
 }
 .heroActions { display: flex; flex-wrap: wrap; gap: 14px; }
 .primaryBtn, .secondaryBtn, .resultCard a, .miniForm button {
@@ -154,19 +154,19 @@ h3 { margin-bottom: 12px; color: var(--navy); font-size: 22px; }
 .secondaryBtn { border: 1px solid rgba(255, 255, 255, 0.5); color: var(--white); }
 .secondaryBtn:hover { border-color: var(--white); background: rgba(255, 255, 255, 0.08); }
 .heroProof {
-  padding: 34px;
+  padding: 26px;
   background: rgba(255, 255, 255, 0.95);
   color: var(--ink);
   box-shadow: var(--shadow);
   border-top: 5px solid var(--gold);
 }
-.heroProof img { width: 92px; margin-bottom: 28px; }
-.heroProof div { padding: 22px 0; border-top: 1px solid var(--line); }
+.heroProof img { width: 78px; margin-bottom: 20px; }
+.heroProof div { padding: 16px 0; border-top: 1px solid var(--line); }
 .heroProof strong {
   display: block;
   font-family: var(--serif);
   color: var(--navy);
-  font-size: 34px;
+  font-size: 25px;
   line-height: 1;
 }
 .heroProof span { display: block; margin-top: 8px; color: var(--muted); font-size: 14px; }
@@ -181,17 +181,17 @@ h3 { margin-bottom: 12px; color: var(--navy); font-size: 22px; }
   text-transform: uppercase;
 }
 
-.section { padding-top: 105px; padding-bottom: 105px; }
+.section { padding-top: 58px; padding-bottom: 58px; }
 .splitIntro, .twoCol, .licenseSection, .propertyGrid, .resumeGrid {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
-  gap: clamp(44px, 7vw, 96px);
+  gap: clamp(28px, 4.5vw, 60px);
   align-items: start;
 }
 .splitIntro > p, .richText p, .twoCol > div > p, .proofCopy > p, .narrowHero p, .intakeGrid p {
   color: var(--muted);
-  font-size: 17px;
-  line-height: 1.78;
+  font-size: 15px;
+  line-height: 1.7;
 }
 .splitIntro h2, .twoCol h2, .sectionTitle h2, .proofCopy h2, .propertyGrid h2, .licenseSection h2, .resumeGrid h2 {
   color: var(--navy);
@@ -201,15 +201,15 @@ h3 { margin-bottom: 12px; color: var(--navy); font-size: 22px; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 22px;
-  margin-bottom: 70px;
+  margin-bottom: 34px;
 }
 .pathCard {
   position: relative;
-  min-height: 480px;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: clamp(34px, 5vw, 58px);
+  padding: clamp(26px, 3.5vw, 38px);
   overflow: hidden;
   color: var(--white);
 }
@@ -232,14 +232,14 @@ h3 { margin-bottom: 12px; color: var(--navy); font-size: 22px; }
   top: 24px;
   color: rgba(255,255,255,.13);
   font-family: var(--serif);
-  font-size: 118px;
+  font-size: 76px;
 }
 .pathCard p { color: var(--gold-2); font-size: 12px; font-weight: 900; letter-spacing: 0.16em; text-transform: uppercase; }
-.pathCard h2 { max-width: 610px; color: var(--white); font-size: clamp(28px, 3vw, 40px); }
+.pathCard h2 { max-width: 560px; color: var(--white); font-size: clamp(22px, 2vw, 28px); }
 .pathCard em { margin-top: 20px; font-style: normal; font-size: 12px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
 
-.proofGrid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 60px; align-items: center; }
-.checkGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 30px; }
+.proofGrid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 36px; align-items: center; }
+.checkGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 22px; }
 .checkGrid span, .audienceGrid span, .pillGrid span {
   padding: 15px 16px;
   background: var(--mist);
@@ -338,14 +338,14 @@ h3 { margin-bottom: 12px; color: var(--navy); font-size: 22px; }
   font-weight: 650;
 }
 
-.darkBand { padding: 96px 0; background: var(--navy); color: var(--white); }
+.darkBand { padding: 58px 0; background: var(--navy); color: var(--white); }
 .resultsGrid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 28px; align-items: stretch; }
-.resultsGrid h2 { color: var(--white); font-size: clamp(30px, 3.2vw, 44px); }
-.resultsGrid article { padding: 28px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.04); }
-.resultsGrid strong { display: block; margin-bottom: 12px; color: var(--gold-2); font-family: var(--serif); font-size: 34px; }
+.resultsGrid h2 { color: var(--white); font-size: clamp(24px, 2.4vw, 32px); }
+.resultsGrid article { padding: 22px; border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.04); }
+.resultsGrid strong { display: block; margin-bottom: 10px; color: var(--gold-2); font-family: var(--serif); font-size: 25px; }
 .resultsGrid p { color: #b7c8cf; font-size: 14px; line-height: 1.7; }
 
-.sectionTitle { max-width: 850px; margin-bottom: 44px; }
+.sectionTitle { max-width: 760px; margin-bottom: 26px; }
 .audienceGrid, .pillGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -361,16 +361,16 @@ h3 { margin-bottom: 12px; color: var(--navy); font-size: 22px; }
 .clientLists h3 { font-family: var(--serif); font-size: 28px; }
 .clientLists p { color: var(--muted); font-size: 14px; line-height: 1.85; }
 
-.pageHero { padding: 108px 0 118px; }
+.pageHero { padding: 62px 0 68px; }
 .appraisalHero { background: linear-gradient(120deg, rgba(6,27,42,.96), rgba(6,27,42,.8)), var(--navy); }
 .costHero { background: linear-gradient(120deg, rgba(6,27,42,.94), rgba(32,119,131,.72)), var(--navy); }
 .aboutHero { background: linear-gradient(120deg, rgba(6,27,42,.95), rgba(118,83,29,.66)), var(--navy); }
 .quoteHero { background: linear-gradient(120deg, rgba(6,27,42,.96), rgba(32,119,131,.7)), var(--navy); }
 .narrowHero { max-width: 1000px; }
 .narrowHero h1 { color: var(--white); }
-.narrowHero p { max-width: 760px; color: rgba(255,255,255,.82); margin-bottom: 30px; }
+.narrowHero p { max-width: 720px; color: rgba(255,255,255,.82); margin-bottom: 22px; }
 
-.subtleBand { padding: 92px 0; background: var(--paper); }
+.subtleBand { padding: 56px 0; background: var(--paper); }
 .propertyGrid { align-items: center; }
 .licenseGrid {
   display: grid;
@@ -386,11 +386,11 @@ h3 { margin-bottom: 12px; color: var(--navy); font-size: 22px; }
 .licenseGrid strong { display: block; font-family: var(--serif); font-size: 26px; }
 .licenseGrid span { display: block; margin-top: 8px; color: #b9c7ce; font-size: 13px; font-weight: 800; }
 
-.calculatorSection { padding: 100px 0; background: var(--mist); }
-.calcGrid { display: grid; grid-template-columns: 1.05fr 0.78fr; gap: 74px; align-items: center; }
+.calculatorSection { padding: 58px 0; background: var(--mist); }
+.calcGrid { display: grid; grid-template-columns: 1.05fr 0.78fr; gap: 44px; align-items: center; }
 .calcGrid h2 { color: var(--navy); }
 .calcGrid p { color: var(--muted); line-height: 1.75; }
-.calcFields { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 34px; }
+.calcFields { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 24px; }
 label { color: #344a52; font-size: 11px; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; }
 input, select, textarea {
   display: block;
@@ -404,25 +404,25 @@ input, select, textarea {
 }
 input:focus, select:focus, textarea:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(32, 119, 131, 0.12); }
 .resultCard {
-  padding: 40px;
+  padding: 28px;
   background: var(--white);
   border-top: 5px solid var(--gold);
   box-shadow: var(--shadow);
 }
 .resultCard > p { color: var(--muted); font-size: 11px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
-.resultCard > strong { display: block; margin: 8px 0 24px; color: var(--teal); font-family: var(--serif); font-size: 64px; line-height: 1; }
+.resultCard > strong { display: block; margin: 8px 0 20px; color: var(--teal); font-family: var(--serif); font-size: 42px; line-height: 1; }
 .resultCard div { display: flex; justify-content: space-between; gap: 14px; padding: 14px 0; border-top: 1px solid var(--line); font-size: 13px; }
 .resultCard a { width: 100%; margin: 26px 0 14px; }
 .resultCard small { color: #7a8a8e; font-size: 11px; }
 
 .processGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-.processGrid article { padding: 28px; border: 1px solid var(--line); background: #fbfcfb; }
-.processGrid span { color: var(--gold); font-family: var(--serif); font-size: 46px; }
+.processGrid article { padding: 22px; border: 1px solid var(--line); background: #fbfcfb; }
+.processGrid span { color: var(--gold); font-family: var(--serif); font-size: 32px; }
 .processGrid p { color: var(--muted); font-size: 14px; line-height: 1.72; }
 
-.aboutGrid { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 76px; align-items: center; }
+.aboutGrid { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 46px; align-items: center; }
 .portraitCard {
-  min-height: 430px;
+  min-height: 320px;
   display: grid;
   place-items: center;
   align-content: center;
@@ -432,25 +432,25 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal); box-shado
   color: var(--white);
   box-shadow: -22px 22px 0 var(--paper);
 }
-.portraitCard img { width: 142px; }
-.portraitCard strong { font-family: var(--serif); font-size: 32px; text-align: center; }
+.portraitCard img { width: 112px; }
+.portraitCard strong { font-family: var(--serif); font-size: 25px; text-align: center; }
 .portraitCard span { color: var(--gold-2); font-size: 11px; font-weight: 900; letter-spacing: .18em; }
-.timeline div { display: grid; grid-template-columns: 150px 1fr; gap: 24px; padding: 22px 0; border-top: 1px solid #d8d0c1; }
+.timeline div { display: grid; grid-template-columns: 150px 1fr; gap: 20px; padding: 16px 0; border-top: 1px solid #d8d0c1; }
 .timeline span { color: #8a6a32; font-size: 12px; font-weight: 900; }
-.timeline strong { color: var(--navy); font-family: var(--serif); font-size: 25px; }
+.timeline strong { color: var(--navy); font-family: var(--serif); font-size: 20px; }
 
-.quoteBand, .intakePage { padding: 100px 0; background: var(--navy); color: var(--white); }
-.quoteGrid, .intakeGrid { display: grid; grid-template-columns: 0.82fr 1.18fr; gap: clamp(44px, 7vw, 90px); align-items: start; }
+.quoteBand, .intakePage { padding: 58px 0; background: var(--navy); color: var(--white); }
+.quoteGrid, .intakeGrid { display: grid; grid-template-columns: 0.82fr 1.18fr; gap: clamp(28px, 5vw, 60px); align-items: start; }
 .quoteGrid h2, .intakeGrid h2 { color: var(--white); }
 .quoteGrid p, .intakeGrid p { color: #b9c9cf; }
 .contactStack { display: flex; flex-direction: column; gap: 10px; margin-top: 28px; }
-.contactStack a { color: var(--gold-2); font-family: var(--serif); font-size: 26px; }
+.contactStack a { color: var(--gold-2); font-family: var(--serif); font-size: 20px; }
 .miniForm, .formFrame {
   background: var(--white);
   color: var(--ink);
   box-shadow: 0 28px 70px rgba(0,0,0,.24);
 }
-.miniForm { padding: 34px; }
+.miniForm { padding: 26px; }
 .miniForm form { display: grid; gap: 18px; }
 .miniForm button { width: 100%; margin-top: 6px; }
 .miniForm p { margin: 0; color: #7a898d; font-size: 12px; line-height: 1.6; }
@@ -459,7 +459,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal); box-shado
 .formFrame p { margin: 12px 8px 4px; color: #6d7f84; font-size: 12px; }
 .formFrame a { color: var(--teal); font-weight: 900; text-decoration: underline; }
 
-.siteFooter { padding: 58px 0 26px; background: #03131e; color: #9db1ba; }
+.siteFooter { padding: 42px 0 22px; background: #03131e; color: #9db1ba; }
 .footerGrid { display: grid; grid-template-columns: 1.2fr 0.6fr 0.7fr; gap: 54px; }
 .footerLogo { width: 280px; padding: 10px; background: var(--white); }
 .siteFooter p { max-width: 520px; margin-top: 20px; font-size: 13px; line-height: 1.75; }
@@ -487,15 +487,15 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal); box-shado
   .siteHeader nav { gap: 14px; }
   .siteHeader nav a { font-size: 12px; }
   .homeHero { min-height: auto; }
-  h1 { font-size: 38px; }
-  h2 { font-size: 31px; }
-  .heroGrid, .section, .pageHero, .quoteBand, .intakePage, .calculatorSection, .subtleBand, .darkBand { padding-top: 70px; padding-bottom: 70px; }
-  .heroProof { padding: 24px; }
+  h1 { font-size: 30px; }
+  h2 { font-size: 25px; }
+  .heroGrid, .section, .pageHero, .quoteBand, .intakePage, .calculatorSection, .subtleBand, .darkBand { padding-top: 44px; padding-bottom: 44px; }
+  .heroProof { padding: 20px; }
   .servicePathGrid { margin-bottom: 20px; }
-  .pathCard { min-height: 390px; }
+  .pathCard { min-height: 260px; }
   .checkGrid, .audienceGrid, .pillGrid, .licenseGrid, .processGrid, .calcFields, .footerGrid { grid-template-columns: 1fr; }
-  .clientLists div, .resultCard, .miniForm { padding: 24px; }
-  .resultCard > strong { font-size: 50px; }
+  .clientLists div, .resultCard, .miniForm { padding: 20px; }
+  .resultCard > strong { font-size: 34px; }
   .timeline div { grid-template-columns: 1fr; gap: 5px; }
   .formFrame iframe { height: 1500px; }
   .service-map { padding: 12px 12px 18px; }
