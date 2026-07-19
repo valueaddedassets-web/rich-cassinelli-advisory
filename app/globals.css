@@ -420,6 +420,32 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal); box-shado
 .processGrid span { color: var(--gold); font-family: var(--serif); font-size: 32px; }
 .processGrid p { color: var(--muted); font-size: 14px; line-height: 1.72; }
 
+.faqSection { padding-top: 54px; padding-bottom: 54px; }
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+.faqGrid article {
+  padding: 22px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+.faqGrid h3 {
+  margin-bottom: 10px;
+  font-family: var(--serif);
+  color: var(--navy);
+  font-size: 22px;
+  line-height: 1.15;
+}
+.faqGrid p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.68;
+}
+
 .aboutGrid { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 46px; align-items: center; }
 .portraitCard {
   min-height: 320px;
@@ -475,7 +501,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal); box-shado
   .heroGrid, .proofGrid, .splitIntro, .twoCol, .propertyGrid, .licenseSection, .resumeGrid, .calcGrid, .aboutGrid, .quoteGrid, .intakeGrid { grid-template-columns: 1fr; }
   .servicePathGrid, .clientLists { grid-template-columns: 1fr; }
   .resultsGrid { grid-template-columns: 1fr; }
-  .audienceGrid, .pillGrid, .licenseGrid, .processGrid { grid-template-columns: repeat(2, 1fr); }
+  .audienceGrid, .pillGrid, .licenseGrid, .processGrid, .faqGrid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 680px) {
@@ -494,7 +520,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--teal); box-shado
   .heroProof { padding: 20px; }
   .servicePathGrid { margin-bottom: 20px; }
   .pathCard { min-height: 260px; }
-  .checkGrid, .audienceGrid, .pillGrid, .licenseGrid, .processGrid, .calcFields, .footerGrid { grid-template-columns: 1fr; }
+  .checkGrid, .audienceGrid, .pillGrid, .licenseGrid, .processGrid, .faqGrid, .calcFields, .footerGrid { grid-template-columns: 1fr; }
   .clientLists div, .resultCard, .miniForm { padding: 20px; }
   .resultCard > strong { font-size: 34px; }
   .timeline div { grid-template-columns: 1fr; gap: 5px; }

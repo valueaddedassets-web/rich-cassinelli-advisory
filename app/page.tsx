@@ -1,10 +1,30 @@
 import Link from "next/link";
 import { AppraisalServiceList, CredibilityStrip, PageShell, QuotePanel } from "./components";
+import { JsonLd, breadcrumbSchema } from "./seo";
 import { clientGroups, lenderClients, nonLenderClients } from "./site-data";
 
 export default function Home() {
+  const pageSchema = [
+    breadcrumbSchema([["Home", "/"]]),
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://valueaddedassets.com/#webpage",
+      url: "https://valueaddedassets.com/",
+      name: "Value Added Assets LLC | Commercial Appraisals & Cost Segregation",
+      description:
+        "Commercial appraisal, appraisal review, litigation support, and cost segregation opportunity review for lenders, CPAs, law firms, owners, and investors.",
+      isPartOf: { "@id": "https://valueaddedassets.com/#website" },
+      about: { "@id": "https://valueaddedassets.com/#business" },
+      primaryImageOfPage: "https://valueaddedassets.com/assets/value-added-assets-logo.png",
+    },
+  ];
+
   return (
     <PageShell>
+      {pageSchema.map((schema, index) => (
+        <JsonLd key={index} data={schema} />
+      ))}
       <main>
         <section className="homeHero">
           <div className="heroTexture" />

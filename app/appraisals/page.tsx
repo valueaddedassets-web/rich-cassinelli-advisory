@@ -1,16 +1,67 @@
 import type { Metadata } from "next";
 import { AppraisalServiceList, PageShell, QuotePanel } from "../components";
+import { JsonLd, breadcrumbSchema, faqSchema, serviceSchema } from "../seo";
 import { licenses, propertyTypes } from "../site-data";
 
 export const metadata: Metadata = {
-  title: "Commercial Real Estate Appraisals",
+  title: "Commercial Real Estate Appraisals | MAI Appraiser",
   description:
-    "Commercial real estate appraisal, appraisal review, litigation support, expert witness, property tax analysis, and consulting services led by Richard E. Cassinelli, MAI, AI-GRS.",
+    "Order commercial real estate appraisals, appraisal review, litigation support, expert witness, property tax analysis, and consulting from Richard E. Cassinelli, MAI, AI-GRS.",
+  alternates: { canonical: "/appraisals/" },
+  openGraph: {
+    title: "Commercial Real Estate Appraisals | Value Added Assets",
+    description:
+      "Commercial valuation, appraisal review, litigation support, and property tax analysis for lenders, attorneys, owners, agencies, and investors.",
+    url: "/appraisals/",
+  },
 };
 
+const appraisalFaqs: Array<[string, string]> = [
+  [
+    "Who orders commercial appraisal services from Value Added Assets?",
+    "Commercial lenders, credit unions, attorneys, CPAs, public agencies, developers, owners, investors, and family offices contact Value Added Assets for commercial appraisal, appraisal review, litigation support, and valuation consulting.",
+  ],
+  [
+    "What property types can be reviewed?",
+    "Richard E. Cassinelli has experience with office, retail, industrial, multifamily, hospitality, resort, agricultural, automotive, medical office, special-use, and residential subdivision assignments.",
+  ],
+  [
+    "Where is Rich licensed as a Certified General Appraiser?",
+    "Rich holds Certified General Appraiser licenses in Oregon, Washington, California, Idaho, Texas, and Utah.",
+  ],
+  [
+    "How do I request a commercial appraisal quote?",
+    "Use the request quote form, call 503-545-5217, or email valueaddedassets@gmail.com with the property address, property type, purpose, timing, and any lender, attorney, or agency requirements.",
+  ],
+];
+
 export default function AppraisalsPage() {
+  const schemas = [
+    breadcrumbSchema([
+      ["Home", "/"],
+      ["Commercial Appraisals", "/appraisals/"],
+    ]),
+    serviceSchema({
+      name: "Commercial Real Estate Appraisal",
+      description:
+        "Commercial appraisal reports, appraisal review, litigation support, expert witness services, property tax analysis, and valuation consulting led by Richard E. Cassinelli, MAI, AI-GRS.",
+      path: "/appraisals/",
+      serviceType: [
+        "Commercial real estate appraisal",
+        "Appraisal review",
+        "Litigation support appraisal",
+        "Property tax appeal appraisal",
+        "Expert witness appraisal",
+      ],
+    }),
+    faqSchema(appraisalFaqs),
+  ];
+
   return (
     <PageShell>
+      {schemas.map((schema, index) => (
+        <JsonLd key={index} data={schema} />
+      ))}
       <main>
         <section className="pageHero appraisalHero">
           <div className="shell narrowHero">
@@ -63,6 +114,23 @@ export default function AppraisalsPage() {
                 <span>{number}</span>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="subtleBand">
+          <div className="shell faqSection">
+            <div className="sectionTitle">
+              <p className="eyebrow">Commercial appraisal questions</p>
+              <h2>Clear answers for lenders, legal teams, owners, and advisors.</h2>
+            </div>
+            <div className="faqGrid">
+              {appraisalFaqs.map(([question, answer]) => (
+                <article key={question}>
+                  <h3>{question}</h3>
+                  <p>{answer}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 

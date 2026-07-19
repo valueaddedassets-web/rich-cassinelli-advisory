@@ -1,16 +1,43 @@
 import type { Metadata } from "next";
 import { PageShell } from "../components";
+import { JsonLd, breadcrumbSchema } from "../seo";
 import { contact } from "../site-data";
 
 export const metadata: Metadata = {
-  title: "Request a Quote",
+  title: "Request a Commercial Appraisal or Cost Segregation Quote",
   description:
-    "Request a commercial appraisal quote, appraisal review, litigation support, or cost segregation opportunity review from Value Added Assets LLC.",
+    "Request a commercial appraisal quote, appraisal review, litigation support assignment, property tax analysis, or cost segregation opportunity review from Value Added Assets LLC.",
+  alternates: { canonical: "/request-quote/" },
+  openGraph: {
+    title: "Request a Quote | Value Added Assets",
+    description:
+      "Start a commercial appraisal, appraisal review, litigation support, or cost segregation request with Richard E. Cassinelli, MAI, AI-GRS.",
+    url: "/request-quote/",
+  },
 };
 
 export default function RequestQuotePage() {
+  const schemas = [
+    breadcrumbSchema([
+      ["Home", "/"],
+      ["Request Quote", "/request-quote/"],
+    ]),
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      url: "https://valueaddedassets.com/request-quote/",
+      name: "Request a Commercial Appraisal or Cost Segregation Quote",
+      description:
+        "Quote intake for commercial appraisal, appraisal review, litigation support, property tax analysis, and cost segregation opportunity review.",
+      about: { "@id": "https://valueaddedassets.com/#business" },
+    },
+  ];
+
   return (
     <PageShell>
+      {schemas.map((schema, index) => (
+        <JsonLd key={index} data={schema} />
+      ))}
       <main>
         <section className="pageHero quoteHero">
           <div className="shell narrowHero">

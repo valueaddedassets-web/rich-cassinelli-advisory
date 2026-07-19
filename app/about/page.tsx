@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
 import { PageShell, QuotePanel } from "../components";
+import { JsonLd, breadcrumbSchema } from "../seo";
 import { licenses } from "../site-data";
 
 export const metadata: Metadata = {
   title: "About Richard E. Cassinelli, MAI, AI-GRS",
   description:
     "Learn about Richard E. Cassinelli, MAI, AI-GRS, founder of Value Added Assets LLC and commercial real estate appraiser and consultant since 1987.",
+  alternates: { canonical: "/about/" },
+  openGraph: {
+    title: "About Richard E. Cassinelli, MAI, AI-GRS",
+    description:
+      "Principal Owner of Value Added Assets LLC, commercial real estate appraiser and consultant since 1987.",
+    url: "/about/",
+  },
 };
 
 const experience = [
@@ -29,8 +37,26 @@ const courses = [
 ];
 
 export default function AboutPage() {
+  const schemas = [
+    breadcrumbSchema([
+      ["Home", "/"],
+      ["About Rich", "/about/"],
+    ]),
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      url: "https://valueaddedassets.com/about/",
+      name: "About Richard E. Cassinelli, MAI, AI-GRS",
+      about: { "@id": "https://valueaddedassets.com/#richard-cassinelli" },
+      mainEntity: { "@id": "https://valueaddedassets.com/#richard-cassinelli" },
+    },
+  ];
+
   return (
     <PageShell>
+      {schemas.map((schema, index) => (
+        <JsonLd key={index} data={schema} />
+      ))}
       <main>
         <section className="pageHero aboutHero">
           <div className="shell narrowHero">
