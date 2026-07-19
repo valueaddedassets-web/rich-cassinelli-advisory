@@ -5,11 +5,7 @@ export function Header() {
   return (
     <header className="siteHeader">
       <Link className="brand" href="/" aria-label="Value Added Assets home">
-        <img src="/assets/vaa-mark.svg" alt="" />
-        <span>
-          <strong>Value Added Assets</strong>
-          <small>Appraisal · Cost Segregation · Advisory</small>
-        </span>
+        <img src="/assets/value-added-assets-logo.png" alt="Value Added Assets" />
       </Link>
       <nav aria-label="Primary navigation">
         {navItems.map((item) => (
@@ -30,7 +26,7 @@ export function Footer() {
     <footer className="siteFooter">
       <div className="shell footerGrid">
         <div>
-          <img className="footerLogo" src="/assets/value-added-assets-logo.svg" alt="Value Added Assets" />
+          <img className="footerLogo" src="/assets/value-added-assets-logo.png" alt="Value Added Assets" />
           <p>
             Commercial real estate appraisal, appraisal review, litigation support, and cost segregation
             opportunity review for serious real estate decisions.

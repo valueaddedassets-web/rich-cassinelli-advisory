@@ -23,7 +23,7 @@ export default function Home() {
               </div>
             </div>
             <aside className="heroProof">
-              <img src="/assets/vaa-mark.svg" alt="" />
+              <img src="/assets/value-added-assets-logo.png" alt="Value Added Assets" />
               <div>
                 <strong>Since 1987</strong>
                 <span>Commercial appraisal and consulting experience</span>

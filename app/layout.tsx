@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "litigation support appraisal",
     "property tax appeal appraisal",
   ],
-  icons: { icon: "/assets/vaa-mark.svg", shortcut: "/assets/vaa-mark.svg" },
+  icons: { icon: "/assets/value-added-assets-logo.png", shortcut: "/assets/value-added-assets-logo.png" },
   openGraph: {
     title: "Value Added Assets LLC",
     description: "Commercial appraisal and cost segregation quote intake for lenders, CPAs, law firms, owners, and investors.",

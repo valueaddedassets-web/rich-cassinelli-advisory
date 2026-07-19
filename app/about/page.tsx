@@ -45,7 +45,7 @@ export default function AboutPage() {
 
         <section className="section shell aboutGrid">
           <div className="portraitCard">
-            <img src="/assets/vaa-mark.svg" alt="" />
+            <img src="/assets/value-added-assets-logo.png" alt="Value Added Assets" />
             <strong>Richard E. Cassinelli</strong>
             <span>MAI · AI-GRS</span>
           </div>

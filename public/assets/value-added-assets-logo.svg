@@ -1,12 +1,13 @@
 <svg width="760" height="180" viewBox="0 0 760 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Value Added Assets logo</title>
-  <desc id="desc">Corporate logo for Value Added Assets with VAA monogram and valuation line.</desc>
+  <desc id="desc">Corporate logo for Value Added Assets.</desc>
   <rect x="18" y="20" width="140" height="140" fill="#061B2A"/>
   <path d="M32 34H144V146H32V34Z" stroke="#C49A45" stroke-width="5"/>
   <path d="M44 54H132" stroke="#C49A45" stroke-width="2" opacity=".55"/>
-  <text x="88" y="94" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="43" font-weight="700" letter-spacing="2" fill="#FFFFFF">VAA</text>
-  <path d="M46 116H68L80 105L95 122L111 101H132" stroke="#C49A45" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
-  <text x="88" y="137" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="800" letter-spacing="2.7" fill="#C49A45">VALUE</text>
+  <text x="88" y="98" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="45" font-weight="700" letter-spacing="2" fill="#FFFFFF">VAA</text>
+  <path d="M54 118H122" stroke="#C49A45" stroke-width="5" stroke-linecap="square"/>
+  <path d="M66 130H110" stroke="#C49A45" stroke-width="2" stroke-linecap="square" opacity=".7"/>
+  <text x="88" y="142" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8.5" font-weight="800" letter-spacing="2.5" fill="#C49A45">ASSETS</text>
   <path d="M194 43H704" stroke="#C49A45" stroke-width="3"/>
   <text x="192" y="91" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" letter-spacing="2.5" fill="#061B2A">VALUE ADDED ASSETS</text>
   <text x="194" y="126" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="4.5" fill="#445B63">COMMERCIAL VALUATION</text>
