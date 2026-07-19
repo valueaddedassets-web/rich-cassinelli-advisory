@@ -1,16 +1,11 @@
 <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Value Added Assets mark</title>
-  <desc id="desc">Refined custom monogram mark for Value Added Assets.</desc>
-  <rect x="16" y="16" width="148" height="148" fill="#061B2A"/>
-  <rect x="27" y="27" width="126" height="126" stroke="#BD8F3F" stroke-width="4"/>
-  <path d="M40 47H140" stroke="#E1C176" stroke-width="2"/>
-  <path d="M40 133H140" stroke="#E1C176" stroke-width="2"/>
-  <path d="M47 40V140" stroke="#E1C176" stroke-width="2"/>
-  <path d="M133 40V140" stroke="#E1C176" stroke-width="2"/>
-  <path d="M45 46L88 133L135 46" stroke="#F0D28A" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter"/>
-  <path d="M90 48L122 132" stroke="#F0D28A" stroke-width="10" stroke-linecap="square"/>
-  <path d="M72 101H110" stroke="#F0D28A" stroke-width="10" stroke-linecap="square"/>
-  <path d="M38 142L142 38" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
-  <path d="M38 38L142 142" stroke="rgba(255,255,255,.11)" stroke-width="1.5"/>
-  <rect x="73" y="73" width="34" height="34" fill="#061B2A" stroke="#BD8F3F" stroke-width="3"/>
+  <desc id="desc">Corporate VAA monogram for Value Added Assets.</desc>
+  <rect width="180" height="180" rx="0" fill="#061B2A"/>
+  <path d="M28 36H152V144H28V36Z" stroke="#C49A45" stroke-width="5"/>
+  <path d="M47 62L68 119L90 62" stroke="#FFFFFF" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M91 119L111 62L133 119" stroke="#FFFFFF" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M103 96H123" stroke="#C49A45" stroke-width="7" stroke-linecap="square"/>
+  <path d="M34 132H146" stroke="#C49A45" stroke-width="5" stroke-linecap="square"/>
+  <path d="M34 48H146" stroke="#C49A45" stroke-width="2" stroke-linecap="square" opacity=".55"/>
 </svg>

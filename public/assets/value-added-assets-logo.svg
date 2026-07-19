@@ -1,20 +1,16 @@
-<svg width="680" height="170" viewBox="0 0 680 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="760" height="180" viewBox="0 0 760 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Value Added Assets logo</title>
-  <desc id="desc">Premium wordmark and monogram for Value Added Assets.</desc>
-  <rect x="14" y="14" width="142" height="142" fill="#061B2A"/>
-  <rect x="25" y="25" width="120" height="120" stroke="#BD8F3F" stroke-width="4"/>
-  <path d="M38 45H132" stroke="#E1C176" stroke-width="2"/>
-  <path d="M38 125H132" stroke="#E1C176" stroke-width="2"/>
-  <path d="M45 38V132" stroke="#E1C176" stroke-width="2"/>
-  <path d="M125 38V132" stroke="#E1C176" stroke-width="2"/>
-  <path d="M44 47L84 127L128 47" stroke="#F0D28A" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter"/>
-  <path d="M86 49L116 127" stroke="#F0D28A" stroke-width="9" stroke-linecap="square"/>
-  <path d="M69 98H105" stroke="#F0D28A" stroke-width="9" stroke-linecap="square"/>
-  <path d="M37 132L132 37" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
-  <path d="M37 37L132 132" stroke="rgba(255,255,255,.11)" stroke-width="1.5"/>
-  <rect x="69" y="69" width="32" height="32" fill="#061B2A" stroke="#BD8F3F" stroke-width="3"/>
-  <path d="M192 35H644" stroke="#BD8F3F" stroke-width="2"/>
-  <text x="190" y="82" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="700" letter-spacing="1.5" fill="#061B2A">VALUE ADDED</text>
-  <text x="190" y="126" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="700" letter-spacing="1.5" fill="#061B2A">ASSETS</text>
-  <text x="193" y="151" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="800" letter-spacing="4.2" fill="#7B632E">COMMERCIAL VALUATION · COST SEGREGATION · ADVISORY</text>
+  <desc id="desc">Corporate logo for Value Added Assets.</desc>
+  <rect x="18" y="20" width="140" height="140" fill="#061B2A"/>
+  <path d="M32 34H144V146H32V34Z" stroke="#C49A45" stroke-width="5"/>
+  <path d="M49 63L70 120L91 63" stroke="#FFFFFF" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M92 120L112 63L134 120" stroke="#FFFFFF" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M104 97H124" stroke="#C49A45" stroke-width="7" stroke-linecap="square"/>
+  <path d="M38 132H138" stroke="#C49A45" stroke-width="5" stroke-linecap="square"/>
+  <path d="M38 48H138" stroke="#C49A45" stroke-width="2" stroke-linecap="square" opacity=".55"/>
+  <path d="M194 43H704" stroke="#C49A45" stroke-width="3"/>
+  <text x="192" y="91" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700" letter-spacing="2.5" fill="#061B2A">VALUE ADDED ASSETS</text>
+  <text x="194" y="126" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="4.5" fill="#445B63">COMMERCIAL VALUATION</text>
+  <text x="444" y="126" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="800" letter-spacing="4.5" fill="#445B63">COST SEGREGATION</text>
+  <path d="M194 145H704" stroke="#061B2A" stroke-width="2" opacity=".18"/>
 </svg>
