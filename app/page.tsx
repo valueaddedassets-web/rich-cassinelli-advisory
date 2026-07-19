@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 const money = (value: number) =>
   new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value);
@@ -44,16 +44,6 @@ export default function Home() {
     const potential = accelerated * (taxRate / 100);
     return { depreciable, accelerated, potential };
   }, [propertyValue, landValue, taxRate, reclassRate]);
-
-  function submitIntake(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const subject = encodeURIComponent(`Consultation request — ${data.get("company") || data.get("name")}`);
-    const body = encodeURIComponent(
-      `Name: ${data.get("name")}\nCompany: ${data.get("company")}\nEmail: ${data.get("email")}\nPhone: ${data.get("phone")}\nOpportunity: ${data.get("opportunity")}\nEstimated value / duties: ${data.get("value")}\n\nNotes:\n${data.get("notes")}`,
-    );
-    window.location.href = `mailto:valueaddedassets@gmail.com?subject=${subject}&body=${body}`;
-  }
 
   return (
     <main>
@@ -121,8 +111,11 @@ export default function Home() {
 
       <section className="insights section" id="insights"><div className="shell"><div className="headingRow"><div><p className="eyebrow">Latest perspective</p><h2>What owners and importers should be watching.</h2></div><p>Selected official guidance and timely reporting. Rich can help you understand which developments warrant specialist review.</p></div><div className="insightGrid">{insights.map(item => <article key={item.title}><div><span>{item.tag}</span><time>{item.date}</time></div><h3>{item.title}</h3><p>{item.copy}</p><a href={item.href} target="_blank" rel="noreferrer">Read at {item.source} <span>↗</span></a></article>)}</div></div></section>
 
-      <section className="intake section" id="consultation"><div className="shell intakeGrid"><div><p className="eyebrow">Confidential opportunity review</p><h2>Start with a focused conversation.</h2><p>Tell Richard a little about your property or tariff exposure. He’ll respond personally to clarify the opportunity and identify the right specialist next step.</p><div className="contactBlock"><a href="tel:+15035455217">(503) 545-5217</a><a href="mailto:valueaddedassets@gmail.com">valueaddedassets@gmail.com</a><span>Portland, Oregon · Serving clients nationwide</span></div></div>
-        <form onSubmit={submitIntake}><div className="formRow"><label>Your name<input required name="name" /></label><label>Company<input name="company" /></label></div><div className="formRow"><label>Email<input required name="email" type="email" /></label><label>Phone<input name="phone" type="tel" /></label></div><div className="formRow"><label>Opportunity<select name="opportunity"><option>Cost segregation</option><option>Tariff refund review</option><option>Both / not sure</option><option>CPA or advisor referral</option></select></label><label>Property value / duties paid<input name="value" placeholder="Approximate is fine" /></label></div><label>What should Rich know?<textarea name="notes" rows={4} placeholder="Property type and date placed in service, or import period and approximate duties paid…" /></label><button className="button" type="submit">Send consultation request <span>→</span></button><small>Submitting opens your email application with the completed request. No information is stored by this website.</small></form>
+      <section className="intake section" id="consultation"><div className="shell intakeGrid"><div><p className="eyebrow">Confidential opportunity review</p><h2>Start with a focused conversation.</h2><p>Tell Value Added Assets a little about your property or tariff exposure. We’ll review your information, clarify the opportunity, and identify the right specialist next step.</p><div className="contactBlock"><a href="tel:+15035455217">(503) 545-5217</a><a href="mailto:valueaddedassets@gmail.com">valueaddedassets@gmail.com</a><span>Portland, Oregon · Serving clients nationwide</span></div></div>
+        <div className="intakeFormFrame">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpXP99wX9U962yoSAm3K9SAXmzaeYDte9VUkXb5zmjwZF5CA/viewform?embedded=true" title="Value Added Assets confidential opportunity review" loading="lazy">Loading…</iframe>
+          <p>Having trouble viewing the form? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpXP99wX9U962yoSAm3K9SAXmzaeYDte9VUkXb5zmjwZF5CA/viewform" target="_blank" rel="noreferrer">Open the secure intake form</a>.</p>
+        </div>
       </div></section>
 
       <footer><div className="shell footerGrid"><div className="brand footerBrand"><span className="brandMark"><img src="cassinelli-mark.png" alt="" /></span><span><strong>RICHARD E. CASSINELLI</strong><small>VALUE ADDED ASSETS LLC</small></span></div><p>Part of Value Added Assets LLC—connecting owners and importers with experienced cost segregation and tariff recovery professionals.</p><div><a href="mailto:valueaddedassets@gmail.com">valueaddedassets@gmail.com</a><a href="tel:+15035455217">(503) 545-5217</a></div></div><div className="shell legal">© 2026 Value Added Assets LLC. All rights reserved.<span>Information is educational only and is not tax, legal, engineering, customs, or investment advice. Results are not guaranteed.</span></div></footer>
